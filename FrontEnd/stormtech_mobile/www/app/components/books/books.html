@@ -2,7 +2,25 @@
   <ion-content class="padding">
     <div class="row">
       <div class="col">
-        <h1> Sort Books</h1>
+        <h1> Books List</h1>
+
+        <div ng-repeat="book in books">
+          <div class="row">
+            <div class="col">
+              {{book.id}}
+            </div>
+            <div class="col">
+              {{book.title}}
+            </div>
+            <div class="col">
+              {{book.author}}
+            </div>
+            <div class="col">
+              {{book.year}}
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </ion-content>
