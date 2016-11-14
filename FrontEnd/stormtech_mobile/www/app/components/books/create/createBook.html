@@ -1,0 +1,19 @@
+<ion-view view-title="Create Book">
+  <ion-content class="padding">
+    <div class="list">
+      <h2>Add a new Book</h2>
+      <label class="item item-input">
+        <input type="text" placeholder="Title" ng-model="book.title">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Author" ng-model="book.author">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Edition Year" ng-model="book.year">
+      </label>
+      <button class="button button-dark" ng-click="submitBook(book)">
+        Add new Book
+      </button>
+    </div>
+  </ion-content>
+</ion-view>
