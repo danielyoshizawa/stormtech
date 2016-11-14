@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'stormtech_django'
 ]
 
 MIDDLEWARE_CLASSES = [
