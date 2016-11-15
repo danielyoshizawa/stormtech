@@ -36,7 +36,7 @@ router.post('/sort', function(req, res, next) {
     var queryFields = Object.keys(req.query);
 
     for (var i = queryFields.length - 1; i >= 0; i--) {
-        books = sortBooks(books, queryFields[i], req.query[i] == "desc" ? "desc" : "asc");
+        books = sortBooks(books, queryFields[i], req.query[queryFields[i]] == "desc" ? "desc" : "asc");
     }
 
     res.send(books);
