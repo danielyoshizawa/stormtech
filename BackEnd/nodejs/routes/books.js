@@ -17,11 +17,6 @@ var sortBooks = function (books, field, sort) {
     return books;
 };
 
-var isBooksListValid = function(books) {
-
-    return books == null ? false : true;
-};
-
 var validateBooksList = function(res, books) {
     if (books == null) {
         res.status(500).send("Sorting Service Exception");
